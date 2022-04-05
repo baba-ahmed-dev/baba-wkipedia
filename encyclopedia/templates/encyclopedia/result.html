@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block body %}
+<div class="menu">
+    <ul>
+        <h1>Results :</h1>
+        {% for page in pages %}
+            <li><a href="{% url 'get_page' page %}">{{ page }}</a></li>
+        {%endfor%}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+
+    <p class="alert alert-danger"><span class="text-primary">{{pagename}}</span> Not Found</p>
+    <div>
+        <small>do you want to add it <a href="{%url 'create_page' %}">click here</a> </small>
+    </div>
+
+{% endblock %}
