@@ -9,7 +9,6 @@ Edit existibg one
 add one
 
 ## Getting Started
- you will need to have [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/) installed. You can install the necessary packages using pip:
 
 To run Baba Wikipedia on your local machine, follow these steps:
 
@@ -24,9 +23,19 @@ Install the necessary dependencies using :
 ```
 pip install -r requirements.txt
 ```
-and 
+Create the database:
+```
+python manage.py migrate
+```
+Run the server
 ```
 python manage.py runserver
 ```
 
 Visit http://localhost:3000 in your browser to see the app running.
+
+## License:
+Baba Wikipedia is released under the [MIT License](LICENSE).
+
+## Contact
+If you have any questions or concerns, please feel free to contact the project owner at baba.ahmed.dev@gmail.com.
